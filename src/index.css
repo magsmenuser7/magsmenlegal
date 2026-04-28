@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #1a1a1a;
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-ink-950 hover:bg-ink-800 text-white px-7 py-3.5 text-xs font-semibold tracking-[0.15em] uppercase transition-all duration-300;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border border-ink-950 text-ink-950 hover:bg-ink-950 hover:text-white px-7 py-3.5 text-xs font-semibold tracking-[0.15em] uppercase transition-all duration-300;
+  }
+
+  .btn-outline-white {
+    @apply inline-flex items-center gap-2 border border-white text-white hover:bg-white hover:text-ink-950 px-7 py-3.5 text-xs font-semibold tracking-[0.15em] uppercase transition-all duration-300;
+  }
+
+  .label-tag {
+    @apply text-[10px] font-semibold tracking-[0.25em] uppercase text-ink-500;
+  }
+
+  .section-heading {
+    @apply font-serif text-3xl md:text-4xl lg:text-5xl text-ink-950 leading-tight;
+  }
+
+  .divider {
+    @apply w-8 h-px bg-ink-950;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #f0f0f0; }
+::-webkit-scrollbar-thumb { background: #1a1a1a; }
