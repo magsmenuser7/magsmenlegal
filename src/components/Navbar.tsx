@@ -41,7 +41,7 @@ export default function Navbar() {
             <span className={`font-serif text-xl font-bold tracking-tight transition-colors ${scrolled ? 'text-ink-950' : 'text-white'}`}>
               Magsmen
             </span>
-            <span className={`text-[9px] tracking-[0.3em] uppercase font-medium transition-colors ${scrolled ? 'text-ink-500' : 'text-white/60'}`}>
+            <span className={`text-[9px] pt-1 tracking-[0.3em] uppercase font-medium transition-colors ${scrolled ? 'text-ink-500' : 'text-white/60'}`}>
               Legal Consultants
             </span>
           </a>

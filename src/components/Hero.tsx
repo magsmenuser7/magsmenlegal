@@ -72,8 +72,8 @@ export default function Hero() {
 
         {/* Scroll cue */}
         <div className="mt-16 flex items-center gap-3">
-          <ArrowDown className="w-3.5 h-3.5 text-white/30 animate-bounce" />
-          <span className="text-[10px] text-white/25 tracking-[0.3em] uppercase">Scroll to explore</span>
+          <ArrowDown className="w-3.5 h-3.5 text-white animate-bounce" />
+          <span className="text-[10px] text-white tracking-[0.3em] uppercase">Scroll to explore</span>
         </div>
       </div>
     </section>

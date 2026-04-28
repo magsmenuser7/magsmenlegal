@@ -110,8 +110,8 @@ export default function PracticeAreas() {
                 className={`bg-white p-8 cursor-pointer transition-all duration-300 ${
                   hovered === idx ? 'bg-ink-950' : ''
                 }`}
-                onMouseEnter={() => setHovered(idx)}
-                onMouseLeave={() => setHovered(null)}
+                // onMouseEnter={() => setHovered(idx)}
+                // onMouseLeave={() => setHovered(null)}
               >
                 <div className="flex items-start justify-between mb-6">
                   <div className={`w-10 h-10 border flex items-center justify-center transition-all duration-300 ${
